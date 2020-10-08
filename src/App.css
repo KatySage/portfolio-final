@@ -1,0 +1,220 @@
+.App {
+  text-align: center;
+  overflow-x: hidden;
+  background: #2f5d50
+}
+.App-header h1 { 
+  position: absolute; 
+  font-family: 'Open Sans', sans-serif;
+  font-weight: light;
+  color: #2f5d50;
+  font-size: calc(10px + 13vmin);
+  top: 12%; 
+  left: 3%; 
+
+}
+
+.App-header h2{ 
+  position: absolute; 
+  font-family: 'Open Sans', sans-serif;
+  font-weight: lighter;
+  color: #2f5d50;
+  font-size: calc(10px + 5vmin);
+  top: 23%; 
+  left: 5%; 
+}
+.App-header h2 a{ 
+  color: #2f5d50;
+  text-decoration: none;
+}
+.App-header h2 a:visited{
+  color: #468874;
+}
+.App-header h2 a:hover{
+  color: #5fb69c;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.App-header {
+  background-color: #2f5d50;
+  min-height: 50vh;
+  margin-top: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.custom-icon {
+  font-size: calc(10px + .9vmin);
+  color: #c3e1d8;
+  transition: 0.3s;
+}
+.custom-icon:hover {
+  font-size: calc(10px + 1.5vmin);
+}
+h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: lighter;
+  color: #c3e1d8;
+  font-size: calc(10px + 4vmin);
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  justify-content: left;
+  margin-left: 16px;
+}
+h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: lighter;
+  color: #c3e1d8;
+  font-size: calc(10px + 3vmin);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-left: 16px;
+  margin-bottom: 0px;
+}
+hr{
+  border: 1px solid #1b322c;
+}
+.salon {
+  margin-top: 4em;
+  height: auto;
+  width: 100%;
+max-height: 50vh;
+}
+.feat {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: light;
+  color: #c3e1d8;
+  display: flex;
+  flex-direction: row;
+  align-items: right;
+  justify-content: right;
+  margin-left: 16px;
+  margin-right: 0rem;
+  font-size: calc(10px + 1.5vmin);
+}
+
+.feat-inner{
+  margin-right: .3rem;
+  margin-left: .3rem;
+}
+.feat-content{
+  margin-right: .2rem;
+  margin-left: .2rem;
+}
+.button{
+  background-color: #2f5d50;
+  border-radius: 4px;
+  border: 3px solid #5fb69c;
+  height: calc(10px + 5vmin);
+  width: calc(10px + 17vmin);
+  font-size: calc(10px + 1.5vmin);
+  color: #c3e1d8;
+  outline: none;
+  padding: 4px;
+  text-decoration: none;
+}
+footer{
+  margin-top: .5em;
+  background-color: #1b322c;
+  padding-top: .5em;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + .6vmin);
+  color: #c3e1d8;
+  }
+footer img{
+  width: 3em;
+  height: auto;
+}
+.button2{
+  background-color: #2f5d50;
+  border-radius: 4px;
+  border: 3px solid #5fb69c;
+  height: calc(10px + 5vmin);
+  width: calc(10px + 20vmin);
+  font-size: calc(10px + 3.3vmin);
+  color: #c3e1d8;
+  outline: none;
+  text-decoration: none;
+}
+.link{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+    color: #c3e1d8;
+    font-size: calc(10px + 1vmin);
+    margin-bottom: .7em;
+  }
+  .link:hover{
+    color: #5fb69c;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  }
+.button2:hover{
+  background-color: #468874;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  outline: none;
+}
+@media screen and (min-width: 450px) {
+  .App-header h1 { 
+    top: 10%; 
+  }
+  .App-header h2{ 
+    top: 24%; 
+  }
+}
+@media screen and (min-width: 600px) {
+  .App-header h1 { 
+    top: 5%; 
+  }
+  .App-header h2{ 
+    top: 22%; 
+  }
+}
+@media screen and (min-width: 750px) {
+  .App-header h1 { 
+    top: 2%; 
+  }
+  .App-header h2{ 
+    top: 21%; 
+  }
+}
+@media screen and (min-width: 1200px){
+  .App-header img{
+    width: 100%;
+    height: auto
+  }
+}
+@media screen and (max-width: 800px) {
+  .feat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0px;
+    margin-left: 4rem;
+    font-size: calc(10px + 1.5vmin);
+  }
+  .feat-inner{
+    margin-right: .5rem;
+    margin-left: .5rem;
+  }
+  .feat-content{
+    margin-right: .1rem;
+    margin-left: .1rem;
+  }
+  .salon {
+    margin-top: .7em;
+    height: auto;
+    width: 100%;
+  max-width: 70vh;
+  }
+
+}

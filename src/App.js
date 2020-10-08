@@ -32,7 +32,7 @@ const App = () => {
         <img src={img} alt="help" />
         <h1>Katy Sage
             </h1>
-            <h2><a href={`${process.env.PUBLIC_URL}/ksage_resume.pdf`}target="_blank" rel="noopener noreferrer">resume</a>
+            <h2><a href={`${process.env.PUBLIC_URL}/ksage_resume.pdf`} download target="_blank" rel="noopener noreferrer">resume</a>
                 &nbsp; &nbsp; &nbsp;
             <a href="https://github.com/katysage" target="_blank" rel="noopener noreferrer">github</a>
             &nbsp; &nbsp; &nbsp;

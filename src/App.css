@@ -84,25 +84,24 @@ hr{
 }
 .salon {
   padding: 3em;
-  height: auto;
-  width: 100%;
-max-height: 70vh;
+  height: 100%;
+  width: auto;
+max-height: 50vh;
 }
-.feat {
+.feat, .feat1 {
   font-family: 'Open Sans', sans-serif;
   font-weight: light;
   color: #c3e1d8;
   display: flex;
   flex-direction: row;
-  align-items: right;
-  justify-content: right;
+  align-items: center;
+  justify-content: center;
   margin-left: 16px;
-  margin-right: 0rem;
+  margin-right: 16px;
+  margin-bottom: 2em;
   font-size: calc(10px + 1.5vmin);
 }
-.feat img{
-  margin-left: 1em;
-}
+
 .feat-inner{
   margin-right: .3rem;
   margin-left: .3rem;
@@ -128,6 +127,13 @@ max-height: 70vh;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
   outline: none;
 }
+.center{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
 footer{
   margin-top: .5em;
   background-color: #1b322c;
@@ -179,36 +185,26 @@ footer img{
     top: 24%; 
   }
 }
-@media screen and (min-width: 600px) {
+@media screen and (max-width: 1100px) and (min-width:251px){
   .App-header h1 { 
     top: 5%; 
   }
   .App-header h2{ 
     top: 22%; 
   }
-}
-@media screen and (min-width: 750px) {
-  .App-header h1 { 
-    top: 2%; 
-  }
-  .App-header h2{ 
-    top: 21%; 
-  }
-}
-@media screen and (min-width: 1200px){
-  .App-header img{
-    width: 100%;
-    height: auto
-  }
-}
-@media screen and (max-width: 800px) {
   .feat {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
     margin-right: 0px;
-    margin-left: 4rem;
+    margin-left: 0rem;
+    font-size: calc(10px + 1.5vmin);
+  }
+  .feat1 {
+    display: flex;
+    flex-direction: column;
+    margin-right: 0px;
     font-size: calc(10px + 1.5vmin);
   }
   .feat-inner{
@@ -219,11 +215,75 @@ footer img{
     margin-right: .1rem;
     margin-left: .1rem;
   }
+  h4 {
+margin-top: .3em;
+  }
   .salon {
-    margin-top: .7em;
+    padding: 3em;
+    padding-bottom: .1em;
     height: auto;
     width: 100%;
-  max-width: 70vh;
+  max-height: 50vh;
   }
+  }
+  @media screen and (max-width: 1140px) and (min-width:601) {
+    .feat {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center;
+      margin-right: 0px;
+      margin-left: 4rem;
+      font-size: calc(10px + 1.5vmin);
+    }
+    .feat1 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-right: 0px;
+      margin-left: 4rem;
+      font-size: calc(10px + 1.5vmin);
+    }
+    .feat-inner{
+      margin-right: .5rem;
+      margin-left: .5rem;
+    }
+    .feat-content{
+      margin-right: .1rem;
+      margin-left: .1rem;
+    }
+    h4 {
+  margin-top: .3em;
+    }
+    .salon {
+      padding: 3em;
+      padding-bottom: .1em;
+      height: 100%;
+      width: auto;
+    max-height: 50vh;
+    }
+    }
+@media screen and (min-width: 1200px){
+  .App-header img{
+    width: 100%;
+    height: auto
+  }
+@media screen and (min-width: 1400px){
+  .salon {
+    margin-top: .7em;
+    height: 100%;
+    width: auto;
+    max-height: 70vh;
+  }
+}
+}
 
+@media screen and (min-width: 750px) {
+  .App-header h1 { 
+    top: 2%; 
+  }
+  .App-header h2{ 
+    top: 21%; 
+  }
 }

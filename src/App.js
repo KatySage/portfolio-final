@@ -10,12 +10,13 @@ import memory from './images/memory-screenshot.png';
 import quiz from './images/quiz-screenshot.png';
 import github from './images/github.png';
 import linkedin from './images/linkedin-white.png';
-import pdf from './images/ksage_resume.pdf'
+import pdf from './images/ksage_resume.pdf';
 
 const App = () => {
   const useStyles = makeStyles((theme) => ({
     root: {
       flexGrow: 1,
+      textAlign: 'center',
     },
     paper: {
       padding: theme.spacing(1),
@@ -26,9 +27,6 @@ const App = () => {
     },
   }));
   const classes = useStyles();
-  function btnClick() {
-    window.open("https://www.google.com");
-}
   return (
     <div className="App">
       <header className="App-header">
@@ -194,10 +192,11 @@ const App = () => {
         </Grid>
         </Grid>
   <h3>Featured Works</h3>
+  <div className="center">
     <div className={classes.root}>
-        <Grid container spacing={2}>
+        <Grid className='big-grid' container spacing={6}>
           
-          <Grid item xs={10} sm={10} md={12}>
+          <Grid item xs={12} sm={12} md={12}>
             <Paper className={classes.paper} elevation={0}>
             <div className="feat">
               <div className="feat-inner">
@@ -217,9 +216,9 @@ const App = () => {
               </div>
             </Paper>
           </Grid>
-          <Grid item xs={10} sm={10} md={12}>
+          <Grid item xs={12} sm={12} md={12}>
             <Paper className={classes.paper} elevation={0}>
-            <div className="feat">
+            <div className="feat1">
               
         
               <img className="salon" src={quiz} alt=""></img><div className="feat-inner">
@@ -238,7 +237,7 @@ const App = () => {
               </div>
             </Paper>
           </Grid>
-          <Grid item xs={10} sm={10} md={12}>
+          <Grid item xs={12} sm={12} md={12}>
             <Paper className={classes.paper} elevation={0}>
             <div className="feat">
             <div className="feat-inner">
@@ -260,6 +259,7 @@ const App = () => {
             </Paper>
           </Grid>
     </Grid>
+    </div>
     </div>
     </div>
     <footer>

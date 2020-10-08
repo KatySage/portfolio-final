@@ -35,9 +35,9 @@ const App = () => {
         <h1>Katy Sage
             </h1>
             <h2><a href="/images/ksage_resume.pdf" target="_blank" rel="noopener noreferrer">resume</a>
-                &nbsp; 
+                &nbsp; &nbsp; &nbsp;
             <a href="https://github.com/katysage" target="_blank" rel="noopener noreferrer">github</a>
-            &nbsp; 
+            &nbsp; &nbsp; &nbsp;
             <a href="https://www.linkedin.com/in/katy-sage-86502718b/" target="_blank" rel="noopener noreferrer">linkedin</a>
         </h2>
         </header>
@@ -196,14 +196,14 @@ const App = () => {
     <div className={classes.root}>
         <Grid container spacing={2}>
           
-          <Grid item xs={10} sm={10} md={10}>
+          <Grid item xs={10} sm={10} md={12}>
             <Paper className={classes.paper} elevation={0}>
             <div className="feat">
               <div className="feat-inner">
               <h4>Salon</h4>
               <hr></hr>
               <div className="feat-content">
-              Salon is an app that will let a user browse through artistic pieces and start a conversation virtually. Users can create an account that lets them leave reviews of individual artwork and also comment on others reviews. This is a fullstack project that was completed as part of a four person team remotely. <br /><br></br>
+              Inspired by the French Art Salons of the 17th, 18th, and 19th centuries, Salon is an app that will let a user browse through artistic pieces and start a conversation virtually. Users can search through The Art Institute of Chicago's extensive collection, learn more about each piece, and appreciate the artwork from their home. Each user can create an account that lets them leave reviews of individual artwork, favorite artwork they love, and also comment on others reviews. This is a fullstack project that was completed as part of a four person team remotely. <br /><br></br>
               Built with Node.js, Express, & PostgreSQL.</div>
               <br></br>
               <a className="button" href='https://salon-talk.com/' target="_blank" rel="noopener noreferrer">live demo</a>

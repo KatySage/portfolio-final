@@ -10,6 +10,7 @@ import memory from './images/memory-screenshot.png';
 import quiz from './images/quiz-screenshot.png';
 import github from './images/github.png';
 import linkedin from './images/linkedin-white.png';
+import pdf from './images/ksage_resume.pdf'
 
 const App = () => {
   const useStyles = makeStyles((theme) => ({
@@ -34,7 +35,7 @@ const App = () => {
         <img src={img} alt="help" />
         <h1>Katy Sage
             </h1>
-            <h2><a href="/images/ksage_resume.pdf" target="_blank" rel="noopener noreferrer">resume</a>
+            <h2><a href={pdf} target="_blank" rel="noopener noreferrer">resume</a>
                 &nbsp; &nbsp; &nbsp;
             <a href="https://github.com/katysage" target="_blank" rel="noopener noreferrer">github</a>
             &nbsp; &nbsp; &nbsp;
@@ -49,8 +50,8 @@ const App = () => {
         <Grid item xs={4} sm={3} md={2}>
           <Paper className={classes.paper} elevation={5}>
           <div className="custom-icon">
-            <Devicon name="amazonwebservices" logoStyle="original" size="4em" color="#c3e1d8"/></div><div style= {{color: '#c3e1d8'}} >
-              amazonwebservices
+            <Devicon name="amazonwebservices" logoStyle="original" size="4em" color="#c3e1d8"/>
+              aws
           </div>
           </Paper>
         </Grid>

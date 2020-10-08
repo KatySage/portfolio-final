@@ -10,7 +10,6 @@ import memory from './images/memory-screenshot.png';
 import quiz from './images/quiz-screenshot.png';
 import github from './images/github.png';
 import linkedin from './images/linkedin-white.png';
-import pdf from './images/ksage_resume.pdf';
 
 const App = () => {
   const useStyles = makeStyles((theme) => ({
@@ -33,7 +32,7 @@ const App = () => {
         <img src={img} alt="help" />
         <h1>Katy Sage
             </h1>
-            <h2><a href={pdf} target="_blank" rel="noopener noreferrer">resume</a>
+            <h2><a href={`${process.env.PUBLIC_URL}/ksage_resume.pdf`}target="_blank" rel="noopener noreferrer">resume</a>
                 &nbsp; &nbsp; &nbsp;
             <a href="https://github.com/katysage" target="_blank" rel="noopener noreferrer">github</a>
             &nbsp; &nbsp; &nbsp;

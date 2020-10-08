@@ -216,7 +216,7 @@ const App = () => {
               </div>
             </Paper>
           </Grid>
-          <Grid item xs={10} sm={10} md={10}>
+          <Grid item xs={10} sm={10} md={12}>
             <Paper className={classes.paper} elevation={0}>
             <div className="feat">
               
@@ -237,7 +237,7 @@ const App = () => {
               </div>
             </Paper>
           </Grid>
-          <Grid item xs={10} sm={10} md={11}>
+          <Grid item xs={10} sm={10} md={12}>
             <Paper className={classes.paper} elevation={0}>
             <div className="feat">
             <div className="feat-inner">

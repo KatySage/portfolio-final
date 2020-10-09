@@ -58,11 +58,12 @@
 }
 h3 {
   font-family: 'Open Sans', sans-serif;
-  font-weight: lighter;
+  font-weight: light;
   color: #c3e1d8;
   font-size: calc(10px + 4vmin);
   display: flex;
   flex-direction: row;
+  margin-bottom: 0px;
   align-items: left;
   justify-content: left;
   margin-left: 4%;
@@ -114,11 +115,15 @@ hr{
   border: 1px solid #5fb69c;
   height: calc(10px + 5vmin);
   width: calc(10px + 17vmin);
-  font-size: calc(10px + 1.5vmin);
+  font-size: calc(10px + 1.3vmin);
   color: #c3e1d8;
   outline: none;
-  padding: 4px;
+  font-weight: light;
+  padding: 6px;
   text-decoration: none;
+}
+.cap1{
+  font-size: calc(10px + 1vmin);
 }
 .button:hover{
   background-color: #468874;
@@ -133,7 +138,6 @@ footer{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-weight: lighter;
   font-size: calc(10px + .6vmin);
   color: #c3e1d8;
   }
@@ -150,7 +154,15 @@ footer img{
   font-size: calc(10px + 3.3vmin);
   color: #c3e1d8;
   outline: none;
+  font-weight: light;
   text-decoration: none;
+}
+.cap{
+  font-size: calc(10px + 2.3vmin);
+  font-weight: light;
+}
+.big-cap{
+  font-weight: light;
 }
 .credit{
     font-family: 'Open Sans', sans-serif;

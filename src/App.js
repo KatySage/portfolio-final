@@ -8,8 +8,8 @@ import Grid from '@material-ui/core/Grid';
 import salon from './images/salon-screenshot.png';
 import memory from './images/memory-screenshot.png';
 import quiz from './images/quiz-screenshot.png';
-import github from './images/github.png';
-import linkedin from './images/linkedin-white.png';
+// import github from './images/github.png';
+// import linkedin from './images/linkedin-white.png';
 
 const App = () => {
   const useStyles = makeStyles((theme) => ({
@@ -35,11 +35,15 @@ const App = () => {
         flexDirection: 'row',
         textAlign: 'center',
       },},
+      loot: {      flexGrow: 1,
+        textAlign: 'center',
+
+      },
     paper: {
       padding: theme.spacing(1),
       textAlign: 'center',
       color: theme.palette.text.secondary,
-      background: '#2f5d50',
+      background: '#497f73',
       elevation: 5,
     },
   }));
@@ -60,7 +64,7 @@ const App = () => {
   <h3>About Me</h3>
   type things about me.
   <h3>Languages and Frameworks</h3>
-    <div className={classes.root}>
+    <div className={classes.loot}>
       <Grid container spacing={1}>
         <Grid item xs={4} sm={3} md={2}>
           <Paper className={classes.paper} elevation={5}>
@@ -166,7 +170,6 @@ const App = () => {
           </div>
           </Paper>
         </Grid>
-
         <Grid item xs={4} sm={3} md={2}>
           <Paper className={classes.paper} elevation={5}>
           <div className="custom-icon">
@@ -225,10 +228,10 @@ const App = () => {
                   Built with Node.js, Express, & PostgreSQL.
                 </div>
                 <br></br>
-                  <a className="button" href='https://salon-talk.com/' target="_blank" rel="noopener noreferrer">live demo</a>
+                  <a className="button" href='https://salon-talk.com/' target="_blank" rel="noopener noreferrer">L<span className="cap1">IVE DEMO</span></a>
                 <br></br>
                 <br></br>
-                  <a className="button" href='https://github.com/KatySage/Salon' target="_blank" rel="noopener noreferrer">github</a>
+                  <a className="button" href='https://github.com/KatySage/Salon' target="_blank" rel="noopener noreferrer">G<span className="cap1">ITHUB</span></a>
                 </Grid>
                 <Grid item xs={11} sm={9} md={6}>
                   <img className="image" src={salon} alt=""></img>
@@ -253,10 +256,10 @@ const App = () => {
               Built with JavaScript ES6, HTML5, a RESTful API, & CSS3.
               </div>
               <br></br>
-                <a className="button" href='https://www.quiz-yoself.com/' target="_blank" rel="noopener noreferrer">live demo</a>
+                <a className="button" href='https://www.quiz-yoself.com/' target="_blank" rel="noopener noreferrer">L<span className="cap1">IVE DEMO</span></a>
               <br></br>
               <br></br>
-                <a className="button" href='https://github.com/KatySage/Quiz-Yoself' target="_blank" rel="noopener noreferrer">github</a>
+                <a className="button" href='https://github.com/KatySage/Quiz-Yoself' target="_blank" rel="noopener noreferrer">G<span className="cap1">ITHUB</span></a>
                 </Grid>
               </Grid>
             </div>
@@ -275,10 +278,10 @@ const App = () => {
               Built with React & AWS.
               </div>
               <br></br>
-                <a className="button" href='https://master.dli501o8hqbxr.amplifyapp.com/' target="_blank" rel="noopener noreferrer">live demo</a>
+                <a className="button" href='https://master.dli501o8hqbxr.amplifyapp.com/' target="_blank" rel="noopener noreferrer">L<span className="cap1">IVE DEMO</span></a>
               <br></br>
               <br></br>
-                <a className="button" href='https://github.com/KatySage/memory-game' target="_blank" rel="noopener noreferrer">github</a>
+                <a className="button" href='https://github.com/KatySage/memory-game' target="_blank" rel="noopener noreferrer">G<span className="cap1">ITHUB</span></a>
               <br></br>
                 </Grid>
                 <Grid item xs={11} sm={9} md={6}>
@@ -288,11 +291,11 @@ const App = () => {
         </div>
     <footer>
     <br></br>
-      <a className="button2" href="mailto: katysage1@gmail.com" target="_blank" rel="noopener noreferrer">let's get in touch</a>
-      <p>
+      <a className="button2" href="mailto: katysage1@gmail.com" target="_blank" rel="noopener noreferrer"><span className="big-cap">L</span><span className="cap">ET'S GET IN TOUCH.</span></a>
+      {/* <p>
       <a href="https://www.linkedin.com/in/katy-sage-86502718b/" target="_blank" rel="noopener noreferrer"><img src={linkedin} alt="linkedin logo"></img>
       </a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/katysage" target="_blank" rel="noopener noreferrer"><img src={github} alt="github logo"></img>
-      </a></p>
+      </a></p> */}
       <p>© katysage.com. 2020.
 Image: <a href="https://unsplash.com/@paulearlephotography" className="credit" target="_blank" rel="noopener noreferrer">Paul Earle Photography</a> at Unsplash</p>
               <br></br>

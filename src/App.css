@@ -65,50 +65,48 @@ h3 {
   flex-direction: row;
   align-items: left;
   justify-content: left;
-  margin-left: 16px;
+  margin-left: 4%;
+
 }
 h4 {
   font-family: 'Open Sans', sans-serif;
   font-weight: lighter;
   color: #c3e1d8;
   font-size: calc(10px + 3vmin);
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  margin-left: 16px;
+  margin-top: 0px;
   margin-bottom: 0px;
 }
 hr{
   border: 1px solid #1b322c;
 }
-.salon {
-  padding: 3em;
-  height: 100%;
-  width: auto;
-max-height: 50vh;
-}
-.feat, .feat1 {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: light;
-  color: #c3e1d8;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  margin-left: 16px;
-  margin-right: 16px;
-  margin-bottom: 2em;
-  font-size: calc(10px + 1.5vmin);
-}
+.image{
+  width: 100%;
+  height: auto;
+  max-height: 80vh;
 
-.feat-inner{
-  margin-right: .3rem;
-  margin-left: .3rem;
+}
+.featured{
+  background-color: #497f73;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: #c3e1d8;
+}
+.featured1{
+  background-color: #2f5d50;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: #c3e1d8;
+}
+.featured2{
+  background-color: #497f73;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: #c3e1d8;
 }
 .feat-content{
-  margin-right: .2rem;
-  margin-left: .2rem;
+  margin-right: .5rem;
+  margin-left: .5rem;
+  font-size: calc(10px + 1.2vmin);
 }
 .button{
   background-color: #2f5d50;
@@ -127,15 +125,7 @@ max-height: 50vh;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
   outline: none;
 }
-.center{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-
 footer{
-  margin-top: .5em;
   background-color: #1b322c;
   padding-top: .5em;
   min-height: 10vh;
@@ -143,9 +133,11 @@ footer{
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  font-weight: lighter;
   font-size: calc(10px + .6vmin);
   color: #c3e1d8;
   }
+
 footer img{
   width: 3em;
   height: auto;
@@ -154,21 +146,18 @@ footer img{
   background-color: #2f5d50;
   border-radius: 4px;
   border: 1px solid #5fb69c;
-  height: calc(10px + 5vmin);
-  width: calc(10px + 20vmin);
+  padding: .2em;
   font-size: calc(10px + 3.3vmin);
   color: #c3e1d8;
   outline: none;
   text-decoration: none;
 }
-.link{
+.credit{
     font-family: 'Open Sans', sans-serif;
     font-weight: lighter;
     color: #c3e1d8;
-    font-size: calc(10px + 1vmin);
-    margin-bottom: .7em;
   }
-  .link:hover{
+  .credit:hover{
     color: #5fb69c;
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
   }
@@ -185,99 +174,25 @@ footer img{
     top: 24%; 
   }
 }
+
 @media screen and (max-width: 1100px) and (min-width:251px){
   .App-header h1 { 
     top: 5%; 
   }
   .App-header h2{ 
     top: 22%; 
-  }
-  .feat {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    justify-content: center;
-    margin-right: 0px;
-    margin-left: 0rem;
-    font-size: calc(10px + 1.5vmin);
-  }
-  .feat1 {
-    display: flex;
-    flex-direction: column;
-    margin-right: 0px;
-    font-size: calc(10px + 1.5vmin);
-  }
-  .feat-inner{
-    margin-right: .5rem;
-    margin-left: .5rem;
-  }
-  .feat-content{
-    margin-right: .1rem;
-    margin-left: .1rem;
-  }
-  h4 {
-margin-top: .3em;
-  }
-  .salon {
-    padding: 3em;
-    padding-bottom: .1em;
-    height: auto;
-    width: 100%;
-  max-height: 50vh;
-  }
-  }
+  }}
   @media screen and (max-width: 1140px) and (min-width:601) {
-    .feat {
-      display: flex;
-      flex-direction: column-reverse;
-      align-items: center;
-      justify-content: center;
-      margin-right: 0px;
-      margin-left: 4rem;
-      font-size: calc(10px + 1.5vmin);
-    }
-    .feat1 {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      margin-right: 0px;
-      margin-left: 4rem;
-      font-size: calc(10px + 1.5vmin);
-    }
-    .feat-inner{
-      margin-right: .5rem;
-      margin-left: .5rem;
-    }
-    .feat-content{
-      margin-right: .1rem;
-      margin-left: .1rem;
-    }
+
     h4 {
   margin-top: .3em;
-    }
-    .salon {
-      padding: 3em;
-      padding-bottom: .1em;
-      height: 100%;
-      width: auto;
-    max-height: 50vh;
     }
     }
 @media screen and (min-width: 1200px){
   .App-header img{
     width: 100%;
     height: auto
-  }
-@media screen and (min-width: 1400px){
-  .salon {
-    margin-top: .7em;
-    height: 100%;
-    width: auto;
-    max-height: 70vh;
-  }
-}
-}
+  }}
 
 @media screen and (min-width: 750px) {
   .App-header h1 { 

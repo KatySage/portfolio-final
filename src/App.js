@@ -16,7 +16,25 @@ const App = () => {
     root: {
       flexGrow: 1,
       textAlign: 'center',
+      [theme.breakpoints.between('xs', 'sm')]: {
+        flexDirection: 'column-reverse',
+        textAlign: 'center',
+      },
+      [theme.breakpoints.up('md')]: {
+        flexDirection: 'row',
+        textAlign: 'center',
+      },
     },
+    doot: {      flexGrow: 1,
+      textAlign: 'center',
+      [theme.breakpoints.between('xs', 'sm')]: {
+        flexDirection: 'column',
+        textAlign: 'center',
+      },
+      [theme.breakpoints.up('md')]: {
+        flexDirection: 'row',
+        textAlign: 'center',
+      },},
     paper: {
       padding: theme.spacing(1),
       textAlign: 'center',
@@ -190,87 +208,95 @@ const App = () => {
           </Paper>
         </Grid>
         </Grid>
+        </div>
   <h3>Featured Works</h3>
-  <div className="center">
-    <div className={classes.root}>
-        <Grid className='big-grid' container spacing={6}>
-          
-          <Grid item xs={12} sm={12} md={12}>
-            <Paper className={classes.paper} elevation={0}>
-            <div className="feat">
-              <div className="feat-inner">
-              <h4>Salon</h4>
-              <hr></hr>
-              <div className="feat-content">
-              Inspired by the French Art Salons of the 17th, 18th, and 19th centuries, Salon is an app that will let a user browse through artistic pieces and start a conversation virtually. Users can search through The Art Institute of Chicago's extensive collection, learn more about each piece, and appreciate the artwork from their home. Each user can create an account that lets them leave reviews of individual artwork, favorite artwork they love, and also comment on others reviews. This is a fullstack project that was completed as part of a four person team remotely. <br /><br></br>
-              Built with Node.js, Express, & PostgreSQL.</div>
-              <br></br>
-              <a className="button" href='https://salon-talk.com/' target="_blank" rel="noopener noreferrer">live demo</a>
-              <br></br>
-              <br></br>
-              <a className="button" href='https://github.com/KatySage/Salon' target="_blank" rel="noopener noreferrer">github</a>
-              <br></br>
+    <div className="featured">
+        <Grid 
+        container
+        className={classes.root}
+        justify="center"
+        alignItems="center"
+        spacing={3}>
+              <Grid item xs={11} sm={8} md={4}>
+                  <h4>Salon</h4>
+                  <hr></hr>
+                <div className="feat-content">
+                  Salon is an app that will let a user browse through artistic pieces and start a conversation virtually. Users can search through The Art Institute of Chicago's extensive collection to learn more about each piece. Each user can create an account that lets them leave reviews of individual artwork, favorite artwork they love, and also comment on others' reviews. This is a fullstack project that was completed as part of a four person team remotely. <br /><br></br>
+                  Built with Node.js, Express, & PostgreSQL.
+                </div>
+                <br></br>
+                  <a className="button" href='https://salon-talk.com/' target="_blank" rel="noopener noreferrer">live demo</a>
+                <br></br>
+                <br></br>
+                  <a className="button" href='https://github.com/KatySage/Salon' target="_blank" rel="noopener noreferrer">github</a>
+                </Grid>
+                <Grid item xs={11} sm={9} md={6}>
+                  <img className="image" src={salon} alt=""></img>
+                </Grid>
+              </Grid>
               </div>
-              <img className="salon" src={salon} alt=""></img>
-              </div>
-            </Paper>
-          </Grid>
-          <Grid item xs={12} sm={12} md={12}>
-            <Paper className={classes.paper} elevation={0}>
-            <div className="feat1">
-              
-        
-              <img className="salon" src={quiz} alt=""></img><div className="feat-inner">
-              <h4>Quiz Yo'self</h4>
+    <div className="featured1">
+      <Grid 
+        container
+        className={classes.doot}
+        justify="center"
+        alignItems="center"
+        spacing={2}>
+              <Grid item xs={11} sm={9} md={6}>
+                <img className="image" src={quiz} alt=""></img>
+                </Grid>
+                <Grid item xs={11} sm={8} md={4}>
+                <h4>Quiz Yo'self</h4>
               <hr></hr>
               <div className="feat-content">
               This game was created through the use of a RESTful trivia API to populate the selection screen and the questions with unique content for each play. The game needed to be responsive in all sizes and work well on both desktop and mobile screens. Our 4-person team wanted to highlight a strong understanding of both UI/UX design and interactive Javascript.<br /><br></br>
-              Built with JavaScript ES6, HTML5, a RESTful API, & CSS3.</div>
-              <br></br>
-              <a className="button" href='https://www.quiz-yoself.com/' target="_blank" rel="noopener noreferrer">live demo</a>
-              <br></br>
-              <br></br>
-              <a className="button" href='https://github.com/KatySage/Quiz-Yoself' target="_blank" rel="noopener noreferrer">github</a>
-              <br></br>
+              Built with JavaScript ES6, HTML5, a RESTful API, & CSS3.
               </div>
-              </div>
-            </Paper>
-          </Grid>
-          <Grid item xs={12} sm={12} md={12}>
-            <Paper className={classes.paper} elevation={0}>
-            <div className="feat">
-            <div className="feat-inner">
+              <br></br>
+                <a className="button" href='https://www.quiz-yoself.com/' target="_blank" rel="noopener noreferrer">live demo</a>
+              <br></br>
+              <br></br>
+                <a className="button" href='https://github.com/KatySage/Quiz-Yoself' target="_blank" rel="noopener noreferrer">github</a>
+                </Grid>
+              </Grid>
+            </div>
+    <div className="featured2">
+      <Grid 
+        container
+        className={classes.root}
+        justify="center"
+        alignItems="center"
+        spacing={2}>
+              <Grid item xs={11} sm={8} md={4}>
               <h4>Memory Game</h4>
               <hr></hr>
               <div className="feat-content">
               This is a simple card-based memory game. If two of the same cards are selected, they will stay flipped. If the symbols on the cards are not a match, they will flip over after a specific timeout.This game was built primarily to show an understanding of React and deployment on AWS Amplify.<br /><br></br>
-              Built with React & AWS.</div>
-              <br></br>
-              <a className="button" href='https://master.dli501o8hqbxr.amplifyapp.com/' target="_blank" rel="noopener noreferrer">live demo</a>
-              <br></br>
-              <br></br>
-              <a className="button" href='https://github.com/KatySage/memory-game' target="_blank" rel="noopener noreferrer">github</a>
-              <br></br>
+              Built with React & AWS.
               </div>
-        
-              <img className="salon" src={memory} alt="a screenshot of a memory card game"></img>
-              </div>
-            </Paper>
-          </Grid>
-    </Grid>
-    </div>
-    </div>
-    </div>
+              <br></br>
+                <a className="button" href='https://master.dli501o8hqbxr.amplifyapp.com/' target="_blank" rel="noopener noreferrer">live demo</a>
+              <br></br>
+              <br></br>
+                <a className="button" href='https://github.com/KatySage/memory-game' target="_blank" rel="noopener noreferrer">github</a>
+              <br></br>
+                </Grid>
+                <Grid item xs={11} sm={9} md={6}>
+                  <img className="image" src={memory} alt=""></img>
+                </Grid>
+              </Grid>
+        </div>
     <footer>
-    <a className="link" href="#top">to top</a>
-      <a className="button2" href="mailto: katysage1@gmail.com" target="_blank" rel="noopener noreferrer">hire me</a>
+    <br></br>
+      <a className="button2" href="mailto: katysage1@gmail.com" target="_blank" rel="noopener noreferrer">let's get in touch</a>
       <p>
       <a href="https://www.linkedin.com/in/katy-sage-86502718b/" target="_blank" rel="noopener noreferrer"><img src={linkedin} alt="linkedin logo"></img>
       </a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/katysage" target="_blank" rel="noopener noreferrer"><img src={github} alt="github logo"></img>
       </a></p>
-      <p>© katysage.com. 2020.</p>
-              <br></br></footer>
-</div>
+      <p>© katysage.com. 2020.
+Image: <a href="https://unsplash.com/@paulearlephotography" className="credit" target="_blank" rel="noopener noreferrer">Paul Earle Photography</a> at Unsplash</p>
+              <br></br>
+  </footer></div>
   );
 }
 

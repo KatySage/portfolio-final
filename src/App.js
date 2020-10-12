@@ -64,7 +64,7 @@ const App = () => {
             </h1>
             <StickyWrap />
         </header>
-  <h3>About Katy</h3>
+  <h3>About Me</h3>
     <div className="featured">
         <Grid 
         container
@@ -72,7 +72,7 @@ const App = () => {
         spacing={3}>
               <Grid item xs={11} sm={8} md={7}>
                 <p className="about">
-              &nbsp; &nbsp; &nbsp; &nbsp; After graduating from the University of Notre Dame (Go Irish!), Katy went into the veterinary medicine field for several years before a career transition to software engineering. When she's not writing about herself in the third person, Katy can be found playing disc golf, hiking with her partner and their dog, or infuriating her friends by being more involved with the storyline than the combat in videogames. She has a passion for helping others and for problem-solving. </p>
+              &nbsp; &nbsp; &nbsp; &nbsp; After graduating from the University of Notre Dame (Go Irish!), I went into the veterinary medicine field for several years before a career transition to software engineering. When I'm not at my computer coding, I can be found playing disc golf, hiking with my partner and our dog, or infuriating my friends by being more involved with the storyline than the combat in videogames. I have a passion for helping others and for problem-solving. </p>
         </Grid>
         </Grid>
         </div>

@@ -77,6 +77,7 @@ const App = () => {
         </Grid>
         </div>
   <h3>Languages and Frameworks</h3>
+  <div className="lang">
     <div className={classes.loot}>
       <Grid container spacing={1}>
         <Grid item xs={4} sm={3} md={2}>
@@ -224,6 +225,7 @@ const App = () => {
           </Paper>
         </Grid>
         </Grid>
+        </div>
         </div>
   <h3>Featured Works</h3>
     <div className="featured">

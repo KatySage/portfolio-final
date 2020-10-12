@@ -15,11 +15,12 @@
 }
 .sticky-wrapper {
   position: absolute;
-  top: 23%; 
-  left: 5%; 
+  top: 32%; 
+  left: 3%; 
   font-family: 'Open Sans', sans-serif;
   font-weight: lighter;
   color: #2f5d50;
+  text-align: left;
   font-size: calc(10px + 3vmin);
 }
 .sticky .sticky-inner {
@@ -34,6 +35,7 @@
   padding-top: 8px;
   padding-bottom: 8px;
   margin-bottom: 8px;
+  text-align: center;
 }
 .App-header h2 a{ 
   color: #2f5d50;
@@ -89,6 +91,10 @@ h4 {
   font-size: calc(10px + 3vmin);
   margin-top: 0px;
   margin-bottom: 0px;
+}
+.lang{
+  margin-left: 2%;
+  margin-right: 2%;
 }
 hr{
   border: 1px solid #1b322c;
@@ -191,24 +197,19 @@ footer img{
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
   outline: none;
 }
-@media screen and (min-width: 450px) {
-  .App-header h1 { 
-    top: 10%; 
+
+@media screen and (max-width: 450px) {
+  .sticky-wrapper {
+    font-size: calc(10px + 2vmin);
   }
-  .App-header h2{ 
-    top: 24%; 
+  .App-header h1 { 
+    top: 18%; 
+    left: 3%; 
+  
   }
 }
 
-@media screen and (max-width: 1100px) and (min-width:251px){
-  .App-header h1 { 
-    top: 5%; 
-  }
-  .App-header h2{ 
-    top: 22%; 
-  }}
-  @media screen and (max-width: 1140px) and (min-width:601) {
-
+  @media screen and (min-width:550) {
     h4 {
   margin-top: .3em;
     }
@@ -218,12 +219,3 @@ footer img{
     width: 100%;
     height: auto
   }}
-
-@media screen and (min-width: 750px) {
-  .App-header h1 { 
-    top: 2%; 
-  }
-  .App-header h2{ 
-    top: 21%; 
-  }
-}

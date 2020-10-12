@@ -13,27 +13,39 @@
   left: 3%; 
 
 }
-
-.App-header h2{ 
-  position: absolute; 
+.sticky-wrapper {
+  position: absolute;
+  top: 23%; 
+  left: 5%; 
   font-family: 'Open Sans', sans-serif;
   font-weight: lighter;
   color: #2f5d50;
-  font-size: calc(10px + 5vmin);
-  top: 23%; 
-  left: 5%; 
+  font-size: calc(10px + 3vmin);
+}
+.sticky .sticky-inner {
+  position: fixed;
+  background-color: rgba(195, 225, 216, 0.7);
+  font-size: calc(10px + 2vmin);
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  margin-top: 0px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 .App-header h2 a{ 
   color: #2f5d50;
   text-decoration: underline;
-}
+} 
 .App-header h2 a:visited{
   color: #468874;
 }
 .App-header h2 a:hover{
   color: #5fb69c;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
-  background-color:rbga(114, 220, 189, 0.7);
+  background-color: rbga(114, 220, 189, 0.7);
   border-radius: 8px;
 }
 
@@ -53,9 +65,6 @@
   color: #c3e1d8;
   transition: 0.3s;
 }
-.custom-icon:hover {
-  font-size: calc(10px + 1.5vmin);
-}
 h3 {
   font-family: 'Open Sans', sans-serif;
   font-weight: light;
@@ -68,6 +77,10 @@ h3 {
   justify-content: left;
   margin-left: 4%;
 
+}
+.about{
+  margin-left: 8%;
+  font-size: calc(10px + 1.2vmin)
 }
 h4 {
   font-family: 'Open Sans', sans-serif;

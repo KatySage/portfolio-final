@@ -8,8 +8,7 @@ import Grid from '@material-ui/core/Grid';
 import salon from './images/salon-screenshot.png';
 import memory from './images/memory-screenshot.png';
 import quiz from './images/quiz-screenshot.png';
-// import github from './images/github.png';
-// import linkedin from './images/linkedin-white.png';
+import StickyWrap from './components/StickyWrap'
 
 const App = () => {
   const useStyles = makeStyles((theme) => ({
@@ -63,23 +62,17 @@ const App = () => {
         <img src={img} alt="help" />
         <h1>Katy Sage
             </h1>
-            <h2><a href={`${process.env.PUBLIC_URL}/ksage_resume.pdf`} target="_blank" rel="noopener noreferrer">resume</a>
-                &nbsp; &nbsp; &nbsp;
-            <a href="https://github.com/katysage" target="_blank" rel="noopener noreferrer">github</a>
-            &nbsp; &nbsp; &nbsp;
-            <a href="https://www.linkedin.com/in/katy-sage-86502718b/" target="_blank" rel="noopener noreferrer">linkedin</a>
-        </h2>
+            <StickyWrap />
         </header>
   <h3>About Katy</h3>
     <div className="featured">
         <Grid 
         container
         className={classes.soot}
-        justify="center"
-        alignItems="center"
         spacing={3}>
-              <Grid item xs={11} sm={8} md={4}>
-                  After graduating from the University of Notre Dame (Go Irish!), Katy went into the veterinary medicine field for several years before a career transition to software engineering. When she's not writing about herself in the third person, Katy can be found playing disc golf, hiking with her partner and their dog, or infuriating her friends by being more involved with the storyline than the combat in videogames. She has a passion for helping others and for problem-solving. 
+              <Grid item xs={11} sm={8} md={7}>
+                <p className="about">
+              &nbsp; &nbsp; &nbsp; &nbsp; After graduating from the University of Notre Dame (Go Irish!), Katy went into the veterinary medicine field for several years before a career transition to software engineering. When she's not writing about herself in the third person, Katy can be found playing disc golf, hiking with her partner and their dog, or infuriating her friends by being more involved with the storyline than the combat in videogames. She has a passion for helping others and for problem-solving. </p>
         </Grid>
         </Grid>
         </div>

@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default () =>
-<h2 className="sticky-inner"><a href={`${process.env.PUBLIC_URL}/ksage_resume.pdf`} target="_blank" rel="noopener noreferrer">resume</a>
+<h2 className="sticky-inner"><a href={`${process.env.PUBLIC_URL}/ksage_resume.pdf`} download target="_blank" rel="noopener noreferrer">resume</a>
                 &nbsp; &nbsp; &nbsp;
             <a href="https://github.com/katysage" target="_blank" rel="noopener noreferrer">github</a>
             &nbsp; &nbsp; &nbsp;

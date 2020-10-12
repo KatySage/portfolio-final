@@ -9,7 +9,7 @@ import salon from './images/salon-screenshot.png';
 import memory from './images/memory-screenshot.png';
 import quiz from './images/quiz-screenshot.png';
 import StickyWrap from './components/StickyWrap'
-import { PDFDownloadLink} from '@react-pdf/renderer'
+
 const App = () => {
   const useStyles = makeStyles((theme) => ({
     root: {

@@ -35,6 +35,15 @@ const App = () => {
         flexDirection: 'row',
         textAlign: 'center',
       },},
+      soot: {      flexGrow: 1,
+        [theme.breakpoints.between('xs', 'sm')]: {
+          flexDirection: 'column',
+          textAlign: 'center',
+        },
+        [theme.breakpoints.up('md')]: {
+          flexDirection: 'row',
+          textAlign: 'left',
+        },},
       loot: {      flexGrow: 1,
         textAlign: 'center',
 
@@ -65,7 +74,7 @@ const App = () => {
     <div className="featured">
         <Grid 
         container
-        className={classes.root}
+        className={classes.soot}
         justify="center"
         alignItems="center"
         spacing={3}>

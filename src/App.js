@@ -61,8 +61,19 @@ const App = () => {
             <a href="https://www.linkedin.com/in/katy-sage-86502718b/" target="_blank" rel="noopener noreferrer">linkedin</a>
         </h2>
         </header>
-  <h3>About Me</h3>
-  type things about me.
+  <h3>About Katy</h3>
+    <div className="featured">
+        <Grid 
+        container
+        className={classes.root}
+        justify="center"
+        alignItems="center"
+        spacing={3}>
+              <Grid item xs={11} sm={8} md={4}>
+                  After graduating from the University of Notre Dame (Go Irish!), Katy went into the veterinary medicine field for several years before a career transition to software engineering. When she's not writing about herself in the third person, Katy can be found playing disc golf, hiking with her partner and their dog, or infuriating her friends by being more involved with the storyline than the combat in videogames. She has a passion for helping others and for problem-solving. 
+        </Grid>
+        </Grid>
+        </div>
   <h3>Languages and Frameworks</h3>
     <div className={classes.loot}>
       <Grid container spacing={1}>

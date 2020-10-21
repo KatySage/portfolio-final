@@ -267,7 +267,7 @@ const App = () => {
                 <h4>Quiz Yo'self</h4>
               <hr></hr>
               <div className="feat-content">
-              This game was created through the use of a RESTful trivia API to populate the selection screen and the questions with unique content for each play. The game needed to be responsive in all sizes and work well on both desktop and mobile screens. Our 4-person team wanted to highlight a strong understanding of both UI/UX design and interactive Javascript.<br /><br></br>
+              This game was created through the use of a RESTful trivia API to populate the selection screen and the questions with unique content for each play. The game needed to be responsive in all sizes and work well on both desktop and mobile screens. Our 4-person team wanted to highlight a strong understanding of both UI/UX design and interactive JavaScript.<br /><br></br>
               Built with JavaScript ES6, HTML5, a RESTful API, & CSS3.
               </div>
               <br></br>
